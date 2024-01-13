@@ -1,4 +1,9 @@
 ---
+interface Props {
+    class?: string
+    title: string
+    subtitle?: string
+}
 const { title, subtitle } = Astro.props
 ---
 <article class={`
@@ -10,5 +15,5 @@ const { title, subtitle } = Astro.props
 
 `}>
     <h2>{title}</h2>
-    <h3>{subtitle}</h3>
+    {subtitle && <h3>{subtitle}</h3>}
 </article>
