@@ -1,3 +1,6 @@
+---
+const { title, subtitle } = Astro.props
+---
 <article class={`
     ${Astro.props.class}
     relative rounded-xl
@@ -6,5 +9,6 @@
     shadow-inner shadow-white/10
 
 `}>
-    <h2>{}</h2>
+    <h2>{title}</h2>
+    <h3>{subtitle}</h3>
 </article>
