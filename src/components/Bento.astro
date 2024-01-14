@@ -4,11 +4,19 @@ import BentoItem from './BentoItem.astro'
 <section
     class={`
         w-full max-w-[1400px] 
-        grid grid-cols-10 auto-rows-[25rem] gap-4
+        grid grid-cols-10 auto-rows-[30rem] gap-4
         mx-auto p-20
     `}>
 
-   <BentoItem class="col-sapn-10 md:col-span-4" title="ANDORRA: EL CÉNIT DE LOS PREMIOS ESLAND"/>
+   <BentoItem 
+        class="col-sapn-10 md:col-span-4" 
+        title="ANDORRA: EL CÉNIT DE LOS PREMIOS ESLAND"
+    >
+        <p slot="content" class="max-w-xl">
+            Este año, el momento de la alfombra azul será sustituido y mejorado, gracias a los increíbles paisajes andorranos, por una <strong>alfombra blanca en plena nieve</strong> , situada en las <strong>pistas de esquí de Andorra.</strong> 
+        </p>
+
+   </BentoItem>
    <BentoItem class="col-sapn-10 md:col-span-6" title="LA ALFOMBRA BLANCA" subtitle="16 de febrero de 2024"/>
    <BentoItem class="col-sapn-10 md:col-span-6" title="LA GALA" subtitle="17 de febrero de 2024"/>
    <BentoItem class="col-sapn-10 md:col-span-4" title="DISFRUTA DEL REDDIT DE LA COMUNIDAD"/>
