@@ -20,6 +20,9 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# misc
+.idea
+
 package-lock.json
 npm-lock.json
 yarn.lock
