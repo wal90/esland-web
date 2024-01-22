@@ -6,13 +6,8 @@ const LANGUAGES = {
     SPANISH: 'es'
 }
 
-export const getI18N = ({ currentLocale }) => {
-    switch (currentLocale) {
-        case LANGUAGES.CATALAN:
-            return catalan;
-        case LANGUAGES.SPANISH:
-            return spanish;
-        default:
-            return spanish
-    }
+export const getI18N = ({ currentLocale } : { currentLocale: 'es' | 'ca'}) => {
+    if (currentLocale === LANGUAGES.CATALAN) return catalan
+    if (currentLocale === LANGUAGES.SPANISH) return spanish
+    return spanish
 }
