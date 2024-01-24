@@ -6,7 +6,7 @@ const LANGUAGES = {
     SPANISH: 'es'
 }
 
-export const getI18N = ({ currentLocale } : { currentLocale: 'es' | 'ca'}) => {
+export const getI18N = ({ currentLocale } : { currentLocale: string }) => {
     if (currentLocale === LANGUAGES.CATALAN) return catalan
     if (currentLocale === LANGUAGES.SPANISH) return spanish
     return spanish
