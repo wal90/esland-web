@@ -160,7 +160,10 @@ const { currentLocale } = Astro
 		- grid-template-columns: AUTO 100px 100px el navegador decide cual es el espácio que ocupa
 		- con auto siempre va a tener mas especio el que tiene mas cosas dentro, segun el contenido
 		- se pueden mezclar unidades  ej 50% 100px auto 10vw (tiene 4 columnas)
-		- UNIDAD ESPECIAL ESPECIFICA QUE SOLO SE USA CON GRID ----> fraccion, idica el tamaño de las columnas de manera proporcional (1f) --> es solo una columna
+		- UNIDAD ESPECIAL ESPECIFICA QUE SOLO SE USA CON GRID ----> fraccion, idica el tamaño de las columnas de manera proporcional (1fr) --> es solo una columna
+		-grid-template-columns: 1fr 2fr (la primera tiene una fraccion y la segunda tiene el doble de tamaño que la primera, que una sea el doble de la otra)
+		- 1f ----> es el 100%
+
 
 
 
