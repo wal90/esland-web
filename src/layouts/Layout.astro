@@ -174,10 +174,13 @@ const { currentLocale } = Astro
 	- COLUMN-GAP: 16px ---> para que las columnas tengan una separacion, para no utilizar un margin y todo eso (un hueco)
 	- ROW-GAP: 32px ---> lo mismo que loa nterior pero para las filas
 	- SE PUEDE HACER LO ANTERIOR, LA SEPARACION CON UNA SOLA LINEA DE CODIGO = gap: 32px (filas) 16px (columnas) --- si quiero la misma separacion para todo solo poner una medida
-	- AUTO-FILL ----> sirve para hacerlo responsive
+	- AUTO-FILL ----> sirve para hacerlo responsive --- RELLENA EL CONTENIDO
 		grid-tempalte-columns: repeat( autofill, minmax(200px, 1fr))
 		AUTOFILL ocupa el numero de columnas mientras su ancho minimo sea 200px, *** 200 es el tamaño minimo que tiene que tener una columna *** 
-		- CON MAX-WITH: 800px ---> puedo poner el maximo que quiero de columnas--- hasta donde tiene que llegar
+		- CON MAX-WIDTH: 800px ---> puedo poner el maximo que quiero de columnas--- hasta donde tiene que llegar
+
+	- AUTO-FIT  ---> va a ocupar todo el espacio --- AJUSTA EL CONTENIDO
+		grid-tempalte-columns: repeat( autofit, minmax(200px, 1fr))
 
 
 
