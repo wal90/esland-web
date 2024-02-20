@@ -196,11 +196,14 @@ const { currentLocale } = Astro
 		grid-row-start: 1;
 		grid-row-end:3;
 		}
-	- LO ANTERIOR DE MANERA ABREVIADA CON span
+	- LO ANTERIOR DE MANERA ABREVIADA CON span ----> es lo que ocupa no de donde empieza o termina
 		.container div:first-child { 
 		grid-column-start: span 2; ---> que ocupe dos columnas
 		grid-row-start: span 2; ---> que ocupe dos filas
 		}
+	- otra forma abreviada ----> con grid-colum o grid-row
+		grid-column: 2 / 4; --> que ocupe de la 2 a la 4
+		grid-row: 2 / 3; ---> que la fila ocupe de la 2 a la 3
 		
 
 
