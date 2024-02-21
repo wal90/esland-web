@@ -207,7 +207,13 @@ const { currentLocale } = Astro
 		tambien se pueden usar numeros negativos
 		el menos iria en la posicion contraria
 		se pueden superponer segun el numero que se ponga, con z-index se pone el que uno quiere arriba
-
+	
+	- PARA HACERLO RESPONSIVE ---> ejemplo
+		@media (width > 500px) {
+			.container {
+				grid-template-columns: minmax(200px, 1fr) 1fr 1f;
+			}
+		}
 		
 		
 
