@@ -269,7 +269,12 @@ const { currentLocale } = Astro
 		
 		- ANIMACIONES ----> animar elementos sin necesidad de INTERACTUAR con ellos
 			@keyframes animation-name {
-				from ---> donde empieza la animación 
+				from { ---> donde empieza la animación, es el estado inicial
+					transform: translateY(0px)
+				}
+				to {  ----> es el final de la animación
+					transform: traslateY(100px)
+				}
 			}
 
 	
