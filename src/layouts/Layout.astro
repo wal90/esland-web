@@ -282,7 +282,17 @@ const { currentLocale } = Astro
 				-- cuando caba esta animacion vuelve al mismo lugar del principio --
 
 		-PSEUDOELEMENTO ---> es un elemento que esta dentro del elemento htlm, invisible :: after
-
+			.pulser::after{
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%
+				top: 0;
+				left: 0;
+				backgroud: #09f;
+				border-radius: 50%;
+				z-index: -1;
+			}
 	
 			
 1push
