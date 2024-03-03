@@ -292,6 +292,19 @@ const { currentLocale } = Astro
 				backgroud: #09f;
 				border-radius: 50%;
 				z-index: -1;
+
+				animation-name: pulse;
+				animation-duration: 2s;
+				animation-timing-function: ease-in-out; ---> con que animacion se tiene que reproducir
+			}
+
+			@kayframes pulse {
+				0% {
+					opacity: 0;
+				}
+				50% {
+					scale: .4;
+				}
 			}
 	
 			
