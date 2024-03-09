@@ -353,6 +353,12 @@ const { currentLocale } = Astro
 
 		- ANIMACIONES QUE FUNCIONAN A TRAVES DEL SCROLL
 		- Para que la linea arriba se vaya completando al hacer scrool 
+
+			#progress {
+				---
+				animation: progress-grow auto linear;
+				animation-timeline: scroll()    ----> a partir de que progresa o no la animación
+			}
 			@keyframes progress-grow {
 				from { width: 0% }
 				to { widtg: 100% }
