@@ -363,6 +363,23 @@ const { currentLocale } = Astro
 				from { width: 0% }
 				to { widtg: 100% }
 			}
+		
+		- HACER SCROLL Y QUE EL NAVBAR CAMBIE 
+			h1 {
+				---
+				animation: enhance-header linear both;
+				animation-timeline: scroll(root);
+				animation-range: 0 200px ---> para que la animacion aparezca desde los 200px
+ 			}
+
+			@keyframes enhance-header {
+				to {
+					background: rgba(255, 255, 255, .4);
+					backdrip-filter: blur(5px);
+					font-size: 18px;
+					color: black;
+				}
+			}
 
 
 
