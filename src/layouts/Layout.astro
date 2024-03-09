@@ -357,7 +357,7 @@ const { currentLocale } = Astro
 			#progress {
 				---
 				animation: progress-grow auto linear;
-				animation-timeline: scroll()    ----> a partir de que progresa o no la animación
+				animation-timeline: scroll(root block)    ----> a partir de que progresa o no la animación, indicar desde cuando (root-raiz) y si es scroll vertical u horizontal, block(es vertical, por defecto)
 			}
 			@keyframes progress-grow {
 				from { width: 0% }
