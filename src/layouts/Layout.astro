@@ -382,6 +382,12 @@ const { currentLocale } = Astro
 			}
 
 		- QUE VAYAN APARECIENDO IMAGENES AL HACER SCROLL
+
+			section img {
+				---
+				animation: reveal linear both;
+			} 
+			
 			@keyframes reveal {
 				from {
 					opacity: 0;
