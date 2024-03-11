@@ -386,8 +386,9 @@ const { currentLocale } = Astro
 			section img {
 				---
 				animation: reveal linear both;
+				animation-timeline: scroll();
 			} 
-			
+
 			@keyframes reveal {
 				from {
 					opacity: 0;
